@@ -2,7 +2,7 @@ import React from "react";
 
 import TheLink from "../src/images_/TheLink.webp";
 import DinnerSky from "../src/images_/DinnerSky.jpeg";
-import Fila from "../src/images/Fila.webp";
+import Fila from "../src/images_/Fila.webp";
 import OrderOnline from "../src/images_/OrderOnline.webp";
 import Talabat from "../src/images_/Talabat.webp";
 import Deliveroo from "../src/images_/Deliveroo.png";

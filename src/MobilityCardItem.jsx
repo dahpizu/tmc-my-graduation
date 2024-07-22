@@ -1,10 +1,10 @@
 import React from "react";
 
-import DubaiWaterTaxi from "../src/images/DubaiWaterTaxi.jpeg";
+import DubaiWaterTaxi from "../src/images_/DubaiWaterTaxi.jpeg";
 import DubaiBus from "../src/images_/DubaiBus.jpeg";
 import DubaiTram from "../src/images_/DubaiTram.jpeg";
 import UberCareem from "../src/images_/UberCareem.jpeg";
-import Lime from "../src/images/Lime.jpeg";
+import Lime from "../src/images_/Lime.jpeg";
 import DubaiMetro from "../src/images_/DubaiMetro.webp";
 import DubaiAirTaxi from "../src/images_/DubaiAirTaxi.webp";
 

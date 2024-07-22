@@ -1,5 +1,5 @@
 import React from "react";
-import MyPic from "../src/images/MyPic.png";
+import MyPic from "../src/images_/MyPic.png";
 
 function AboutMeCardItem() {
   return (

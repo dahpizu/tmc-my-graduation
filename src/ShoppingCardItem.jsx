@@ -1,6 +1,7 @@
 import React from "react";
 
-import MOE from "../src/image_/MOE.jpeg";
+import MOE from "../src/images_/MOE.jpeg";
+
 import IBN from "../src/images_/IBN.jpeg";
 import CityWalk from "../src/images_/CityWalk.jpeg";
 import BurjumanMall from "../src/images_/BurjumanMall.jpeg";
