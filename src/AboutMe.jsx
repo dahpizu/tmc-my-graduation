@@ -2,16 +2,14 @@ import React from "react";
 
 import NavBar from "./NavBar";
 import AboutMeCard from "./AboutMeCard";
+import Backa from "../src/images_/Dubaidesert.jpeg";
 
 function AboutMe() {
   return (
     <div className="main">
-      <video
-        autoPlay
-        muted
-        loop
-        src="https://cdn.pixabay.com/video/2020/08/29/48504-454713939_large.mp4"
-      ></video>
+      <div className="backgrounnd">
+        <img src={Backa}></img>
+      </div>
 
       <div className="nav-container">
         <div className="nav-content">

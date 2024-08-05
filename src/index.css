@@ -3,8 +3,7 @@
   padding: 0;
 }
 .main {
-  width: 100%;
-
+  width: 1440px;
   display: flex;
   flex-direction: column;
   background-color: #008000;
@@ -13,15 +12,16 @@
 }
 
 video {
-  width: 100%;
-  height: 100%;
+  width: 1440px;
+  height: 820px;
   object-fit: cover;
   position: fixed;
 }
 .content {
   position: absolute;
-  width: 100%;
+  width: 1500px;
   height: 100%;
+
   top: 0;
   display: flex;
   flex-direction: column;
@@ -35,14 +35,13 @@ video {
   justify-content: center;
   align-items: center;
   height: 80px;
-  max-width: 1500px;
 }
 
 .navbar {
   background: transparent;
   backdrop-filter: blur(8px);
   height: 80px;
-  width: 100%;
+  width: 1500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +67,7 @@ video {
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 60vw;
+  width: 1000px;
   justify-content: end;
   margin-right: 2rem;
 }
@@ -88,6 +87,11 @@ video {
 h1 {
   color: black;
 }
+.backgrounnd {
+  background-image: linear-gradient(to right, gold, brown);
+  width: 1440px;
+  height: 2130px;
+}
 
 .overlay {
   position: absolute;
@@ -95,7 +99,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: blue;
 }
 
 .Home-btn {
@@ -253,7 +257,7 @@ li {
   height: 100%;
 } */
 .card-content {
-  width: 88%;
+  width: 1200px;
   position: absolute;
   top: 10%;
 
@@ -831,6 +835,21 @@ li {
 .FooterIcon {
   font-size: 3rem;
 }
+.fotter-service {
+  display: flex;
+  flex-direction: column;
+  font-style: none;
+  text-align: center;
+  font-size: 1.4 rem;
+}
+.fotter-service-list {
+  color: black;
+  text-decoration: none;
+}
+.fotter-service-list:hover {
+  color: white;
+  text-decoration: dotted;
+}
 .row {
   width: 85%;
   margin: 5px;
@@ -1022,11 +1041,162 @@ form .form-btn {
   text-decoration: none;
 }
 
+.AddedThings {
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: absolute;
+}
+.stepbox {
+  width: 190px;
+  height: 40px;
+  background-image: linear-gradient(to right, white, gray);
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  /* background-color: black; */
+}
+.Stepboxx {
+  padding-top: 10px;
+}
+
+.StepsForm {
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+  background-image: linear-gradient(to right, white blue);
+
+  border-radius: 15px;
+}
+
+.MultiStepss {
+  width: 1440px;
+  height: 813px;
+  background-image: linear-gradient(to right, brown, gold, white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.6rem;
+  align-items: center;
+  color: white;
+  position: absolute;
+}
+.StepOptions {
+  background-color: black;
+}
+.StepOption {
+  background-image: linear-gradient(to right, white, gray);
+  width: 110px;
+  height: 35px;
+  border: none;
+}
+.btn-prev,
+.btn-next {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-prev {
+  background-color: #f1c40f; /* Yellow */
+  color: white;
+}
+
+.btn-prev:hover {
+  background-color: #d4ac0d;
+}
+
+.btn-next {
+  background-color: #2ecc71; /* Green */
+  color: white;
+}
+
+.btn-next:hover {
+  background-color: #27ae60;
+}
+
 @keyframes moving {
   0% {
     left: -20px;
   }
   100% {
     left: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main {
+    width: 429px;
+    height: 930px;
+  }
+  video {
+    width: 429px;
+    height: 930px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .content {
+    width: 429px;
+    height: 930px;
+    font-size: 14px;
+    display: flex;
+    position: relative;
+  }
+  .overlay {
+    width: 429px;
+    height: 930px;
+  }
+  .Home-btn {
+    color: black;
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  .dropdown-menu {
+    width: 30px;
+
+    height: 20px;
+  }
+  .dropdownItem {
+    margin: 0;
+
+    height: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+  .nav-item {
+    width: 50px;
+    margin: 0;
+    height: 30px;
+  }
+  .nav-links {
+    color: #fff;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    text-decoration: none;
+
+    width: 60px;
+  }
+  .dropdownIcon {
+    color: black;
+    width: 30px;
+    height: 20px;
+    background-color: green;
+  }
+  .D1 {
+    font-size: 20px;
   }
 }

@@ -49,10 +49,9 @@ function DropDownItem(props) {
         <Link to="/AboutMe/" className="nav-links" onClick={closeMobileMenu}>
           <MdAccountCircle className="dropdownIcon" />
 
-          <button className="D2">About Me</button>
+          <button className="D2">About</button>
         </Link>
       </li>
-      <li className="nav-item"></li>
     </div>
   );
 }

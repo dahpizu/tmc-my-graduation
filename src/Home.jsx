@@ -3,19 +3,16 @@ import React from "react";
 import DropDownItem from "./DropDownItem";
 import { useState } from "react";
 import { GiCamel } from "react-icons/gi";
+import Backa from "../src/images_/Dubaidesert.jpeg";
 
 function Home() {
   const [open, setOpen] = useState(true);
   const handleClick = () => setClick(!click);
   return (
     <div className="main">
-      <div className="overlay"></div>
-      <video
-        autoPlay
-        muted
-        loop
-        src="https://videos.pexels.com/video-files/12605297/12605297-uhd_2560_1440_30fps.mp4"
-      ></video>
+      <div className="backgrounnd">
+        <img src={Backa}></img>
+      </div>
       <div className="content">
         <h1>Welcome to Do-Buy</h1>
         <div className="menu-trigger" onClick={handleClick}>
@@ -25,7 +22,7 @@ function Home() {
               setOpen(!open);
             }}
           >
-            EXPLORE.....
+            PLAN A TRIP
             <GiCamel className="D31" />
           </button>
         </div>

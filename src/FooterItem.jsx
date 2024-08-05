@@ -5,6 +5,8 @@ import { BsTwitterX } from "react-icons/bs";
 import { IoLogoTiktok } from "react-icons/io5";
 import { FaEnvelope } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+import MultiSteps from "./MultiSteps";
+import { Link } from "react-router-dom";
 
 function FooterItem() {
   return (
@@ -12,7 +14,18 @@ function FooterItem() {
       <div className="row">
         <div className="col">
           <LuBadgeDollarSign className="FooterIcon" />
+          <div className="fotter-service">
+            <Link className="fotter-service-list" to="/Staycation/">
+              Hey
+            </Link>
 
+            <Link className="fotter-service-list" to="/FoodDrink/">
+              food
+            </Link>
+            <Link className="fotter-service-list" to="/Mobility/">
+              Tranport
+            </Link>
+          </div>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
             eius?
@@ -39,9 +52,9 @@ function FooterItem() {
           </h3>
           <ul>
             <li>
-              <a href="" className="media-links">
+              <Link to="/MultiSteps/" className="media-links">
                 <FaInstagramSquare />
-              </a>
+              </Link>
             </li>
             <li>
               <a href="" className="media-links">
