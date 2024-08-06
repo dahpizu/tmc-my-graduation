@@ -129,6 +129,27 @@ li {
   width: 200px;
   background-color: transparent;
 }
+.DropDownThings-Items {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+.DropDownThings-icon {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+}
+.DropDownThings-img {
+  width: 40px;
+  height: 40px;
+}
+.DropDownThings-texts {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  align-items: center;
+}
 .dropdown-menu::before {
   content: "";
   position: absolute;
