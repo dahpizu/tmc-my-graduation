@@ -11,6 +11,7 @@ import FoodDrink from "./FoodDrink";
 import Mobility from "./Mobility";
 import Shopping from "./Shopping";
 import MultiSteps from "./MultiSteps";
+import MultiStepss from "./MultiStepss";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/AboutMe/" element={<AboutMe />} />
         <Route path="/Staycation/" element={<Staycation />} />
         <Route path="/MultiSteps/" element={<MultiSteps />} />
+        <Route path="/MultiStepss/" element={<MultiStepss />} />
         <Route path="/Shopping/" element={<Shopping />} />
       </Routes>
     </Router>

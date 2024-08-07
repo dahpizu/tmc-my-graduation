@@ -10,16 +10,27 @@ function MultiSteps() {
   return (
     <div className="MultiStepss">
       <NavBar />
-      <div>
+      <div className="steps-container">
         BOOK
         <MultiStep>
-          <StepOne title="0%" />
-          <StepTwo title="25%" />
-          <StepThree title="50%" />
-          <StepFour title="100%" />
+          <StepOne title="Step 1" />
+          <StepTwo title="Step 2" />
+          <StepThree title="Step 3" />
+          <StepFour title="Step 4" />
+          <button title="Submit" className="submitbtn" type="Submit">
+            Submit
+          </button>
         </MultiStep>
       </div>
     </div>
   );
 }
 export default MultiSteps;
+
+// function handleMultiStepss(event) {
+//   event.preventDefault();
+//   let MultiStep = event.target;
+//   let MultiStepData = new MultiData(MultiStep);
+//   let MultiStepDataObj = Object.fromEntries(MultiStepData.entries());
+//   console.log(MultiStepDataObj);
+// }

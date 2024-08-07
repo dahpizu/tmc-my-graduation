@@ -16,29 +16,9 @@ function DropDownItem() {
   return (
     <div className="dropdownItem">
       <li className="nav-item">
-        <div className="nav-links">
-          <MdOutlineTravelExplore className="dropdownIcon" />
-          <button className="D1">Explore</button>
-        </div>
-      </li>
-      <li className="nav-item">
-        SERVICE
-        <div className="nav-links">
-          <ul>
-            <Link to="/Staycation/">
-              <DropDownThings img={HotelIcon} text={"Book an Hotel"} />
-            </Link>
-
-            <Link to="/Shopping/">
-              <DropDownThings img={ShoppingIcon} text={"GO SHOPPING"} />
-            </Link>
-          </ul>
-        </div>
-      </li>
-      <li className="nav-item">
-        <Link to="/Mobility/" className="nav-links">
+        <Link to="/Staycation/" className="nav-links">
           <FaCarSide className="dropdownIcon" />
-          <button className="D2">Mobility</button>
+          <button className="D2">BOOK HOTEL</button>
         </Link>
       </li>
 

@@ -11,21 +11,23 @@ import DubaiMall from "../src/images_/DubaiMall.jpeg";
 function ShoppingCardItem() {
   return (
     <li className="Shoopping-cards-item">
-      <div className="Shopping-cards-item-link">
-        <div className="Shopping-item-pic-wrap-2">
-          <img className="Shopping-cards-item-img" src={MOE} alt="FoodImg" />
+      <Link to="/MultiSteps/" className="media-links">
+        <div className="Shopping-cards-item-link">
+          <div className="Shopping-item-pic-wrap-2">
+            <img className="Shopping-cards-item-img" src={MOE} alt="FoodImg" />
 
-          <h5 className="Shopping-card-item-text">MALL OF EMIRATE</h5>
-          <button className="Shopping-card-item-button">
-            <a
-              className="Shopping-card-item-text-a"
-              href="https://www.google.com/maps/place/Mall+of+the+Emirates/@25.118107,55.1980331,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f6bbec39f339d:0x47afe5626875154c!8m2!3d25.118107!4d55.200608!16zL20vMDhwN3F4?entry=ttu"
-            >
-              SHOP
-            </a>
-          </button>
+            <h5 className="Shopping-card-item-text">MALL OF EMIRATE</h5>
+            <button className="Shopping-card-item-button">
+              <a
+                className="Shopping-card-item-text-a"
+                href="https://www.google.com/maps/place/Mall+of+the+Emirates/@25.118107,55.1980331,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f6bbec39f339d:0x47afe5626875154c!8m2!3d25.118107!4d55.200608!16zL20vMDhwN3F4?entry=ttu"
+              >
+                SHOP
+              </a>
+            </button>
+          </div>
         </div>
-      </div>
+      </Link>
       <div className="Shopping-cards-item-link">
         <div className="Shopping-item-pic-wrap-2">
           <img

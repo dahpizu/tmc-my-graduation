@@ -14,18 +14,8 @@ function FooterItem() {
       <div className="row">
         <div className="col">
           <LuBadgeDollarSign className="FooterIcon" />
-          <div className="fotter-service">
-            <Link className="fotter-service-list" to="/Staycation/">
-              Hey
-            </Link>
+          <LuBadgeDollarSign className="FooterIcon" />
 
-            <Link className="fotter-service-list" to="/FoodDrink/">
-              food
-            </Link>
-            <Link className="fotter-service-list" to="/Mobility/">
-              Tranport
-            </Link>
-          </div>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
             eius?

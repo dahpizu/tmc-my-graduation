@@ -4,7 +4,12 @@ function StepFour() {
   return (
     <div className="StepsForm">
       <div className="Stepboxx">
-        <input className="stepbox" type="text" placeholder="Name Of Visitors" />
+        <input
+          name="VisitorName "
+          className="stepbox"
+          type="text"
+          placeholder="Name Of Visitors"
+        />
       </div>
     </div>
   );

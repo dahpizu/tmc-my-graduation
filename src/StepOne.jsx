@@ -6,7 +6,13 @@ function StepOne() {
       When do you want to go?
       <div className="Stepboxx">
         <div className="Stepboxx">
-          <input className="stepbox" type="date" placeholder="" />
+          <input
+            name="date"
+            className="stepbox"
+            type="date"
+            placeholder=""
+            required
+          />
         </div>
       </div>
     </div>
