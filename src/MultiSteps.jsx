@@ -1,36 +1,87 @@
-import React from "react";
+import React, { useState } from "react";
 import MultiStep from "react-multistep";
 import StepOne from "./StepOne";
 import StepTwo from "./StepTwo";
 import StepThree from "./StepThree";
 import StepFour from "./StepFour";
 import NavBar from "./NavBar";
+import "./index.css";
 
 function MultiSteps() {
-  return (
-    <div className="MultiStepss">
-      <NavBar />
-      <div className="steps-container">
-        BOOK
-        <MultiStep>
-          <StepOne title="Step 1" />
-          <StepTwo title="Step 2" />
-          <StepThree title="Step 3" />
-          <StepFour title="Step 4" />
-          <button title="Submit" className="submitbtn" type="Submit">
-            Submit
-          </button>
-        </MultiStep>
-      </div>
-    </div>
-  );
+  const [step, setStep] = useState(1); // Initialize active step
+
+  const handleNext = () => {
+    if (step < 4) {
+      setStep((prevStep) => prevStep + 1); // Increment step
+    }
+  };
+
+  const handlePrev = () => {
+    if (step > 1) {
+      setStep((prevStep) => prevStep - 1); // Increment step
+    }
+  };
+  switch (step) {
+    case 1:
+      return (
+        <>
+          <div className="MultiStepss">
+            <NavBar />
+            {step}
+            <div className="steps-container">
+              BOOK
+              <StepOne handlePrev={handlePrev} handleNext={handleNext} />
+            </div>
+          </div>
+        </>
+      );
+
+    case 2:
+      return (
+        <>
+          <div className="MultiStepss">
+            <NavBar />
+            {step}
+            <div className="steps-container">
+              BOOK
+              <StepThree handlePrev={handlePrev} handleNext={handleNext} />
+            </div>
+          </div>
+        </>
+      );
+    case 3:
+      return (
+        <>
+          <div className="MultiStepss">
+            <NavBar />
+            {step}
+            <div className="steps-container">
+              BOOK
+              <StepTwo handlePrev={handlePrev} handleNext={handleNext} />
+            </div>
+          </div>
+        </>
+      );
+    case 4:
+      return (
+        <>
+          <div className="MultiStepss">
+            <NavBar />
+            {step}
+            <div className="steps-container">
+              BOOK
+              <StepFour />
+              <button
+                title="Submit"
+                className="StepButton"
+                onClick={() => setShowResult(true)}
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </>
+      );
+  }
 }
 export default MultiSteps;
-
-// function handleMultiStepss(event) {
-//   event.preventDefault();
-//   let MultiStep = event.target;
-//   let MultiStepData = new MultiData(MultiStep);
-//   let MultiStepDataObj = Object.fromEntries(MultiStepData.entries());
-//   console.log(MultiStepDataObj);
-// }

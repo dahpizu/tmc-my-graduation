@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MultiStep from "react-multistep";
 import NavBar from "./NavBar";
 import StepFive from "./StepFive";
@@ -7,24 +7,81 @@ import StepSeven from "./StepSeven";
 import StepEight from "./StepEight";
 
 function MultiStepss() {
-  return (
-    <div className="MultiStepss">
-      <NavBar />
-      <div className="steps-container">
-        BOOK
-        <MultiStep>
-          <StepFive title="Step 5" />
-          <StepSix title="Step 6" />
-          <StepSeven title="Step 7" />
-          <StepEight title="Step 8" />
+  const [step, setStep] = useState(1); // Initialize active step
 
-          <button title="PAYMENT" className="submitbtn" type="Submit">
-            PAY
-          </button>
-        </MultiStep>
-      </div>
-    </div>
-  );
+  const handleNext = () => {
+    if (step < 4) {
+      setStep((prevStep) => prevStep + 1); // Increment step
+    }
+  };
+
+  const handlePrev = () => {
+    if (step > 1) {
+      setStep((prevStep) => prevStep - 1); // Increment step
+    }
+  };
+  switch (step) {
+    case 1:
+      return (
+        <>
+          <div className="MultiStepss">
+            <NavBar />
+            {step}
+            <div className="steps-container">
+              BOOK
+              <StepFive handlePrev={handlePrev} handleNext={handleNext} />
+            </div>
+          </div>
+        </>
+      );
+
+    case 2:
+      return (
+        <>
+          <div className="MultiStepss">
+            <NavBar />
+            {step}
+            <div className="steps-container">
+              BOOK
+              <StepSix handlePrev={handlePrev} handleNext={handleNext} />
+            </div>
+          </div>
+        </>
+      );
+    case 3:
+      return (
+        <>
+          <div className="MultiStepss">
+            <NavBar />
+            {step}
+            <div className="steps-container">
+              BOOK
+              <StepSeven handlePrev={handlePrev} handleNext={handleNext} />
+            </div>
+          </div>
+        </>
+      );
+    case 4:
+      return (
+        <>
+          <div className="MultiStepss">
+            <NavBar />
+            {step}
+            <div className="steps-container">
+              BOOK
+              <StepEight />
+              <button
+                title="Submit"
+                className="StepButton"
+                onClick={() => setShowResult(true)}
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </>
+      );
+  }
 }
 
 export default MultiStepss;

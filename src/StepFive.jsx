@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 function StepFive() {
   return (
@@ -27,6 +27,8 @@ function StepFive() {
           required
         />
       </div>
+      <button className="StepButton">perv</button>
+      <button className="StepButton">next</button>
     </div>
   );
 }
