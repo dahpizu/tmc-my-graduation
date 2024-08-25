@@ -5,8 +5,6 @@ import { BsTwitterX } from "react-icons/bs";
 import { IoLogoTiktok } from "react-icons/io5";
 import { FaEnvelope } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import { ImCoinEuro } from "react-icons/im";
-import { FaPoundSign } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
 
@@ -15,10 +13,7 @@ function FooterItem() {
     <div className="footer">
       <div className="row">
         <div className="col">
-          <FaPoundSign className="FooterIcon" />
-
           <LuBadgeDollarSign className="FooterIcon" />
-          <ImCoinEuro className="FooterIcon" />
 
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,

@@ -7,6 +7,7 @@ function StepFour() {
   let date = localStorage.getItem("date");
   return (
     <div className="StepsForm">
+      Full Name:
       <div className="Stepboxx">
         <div className="Stepboxx">
           <form action="">

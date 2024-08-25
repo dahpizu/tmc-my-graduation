@@ -6,6 +6,8 @@ import StaycationCard from "./StaycationCard";
 function Staycation() {
   return (
     <div className="main">
+      <img className="backgrounnd" src={DubaiCity}></img>
+
       <div className="nav-container">
         <div className="nav-content">
           <NavBar />

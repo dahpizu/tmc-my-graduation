@@ -4,10 +4,12 @@
 }
 .main {
   width: 1440px;
+  height: 830px;
+  background-color: blue;
   display: flex;
   flex-direction: column;
   background-color: #008000;
-  border: 1px solid brown;
+
   overflow: hidden;
 }
 
@@ -17,22 +19,17 @@
   border-radius: 10px;
   margin-right: 20px;
 }
-video {
-  width: 1440px;
-  height: 820px;
-  object-fit: cover;
-  position: fixed;
-}
+
 img .backgrounnd {
   background-image: linear-gradient(to right, gold, brown);
-  width: 1440px;
-  height: 820px;
+
+  height: 870px;
   object-fit: cover;
   position: fixed;
 }
 .content {
   position: absolute;
-  width: 1500px;
+  width: 1200px;
   height: 100%;
 
   top: 0;
@@ -51,7 +48,13 @@ img .backgrounnd {
 }
 
 .navbar {
-  background-image: linear-gradient(to right, white, rgb(240, 132, 9));
+  background-image: linear-gradient(
+    to right,
+    white,
+    white,
+    rgb(240, 132, 9),
+    rgb(240, 132, 9)
+  );
   border-radius: 10px;
   backdrop-filter: blur(8px);
   height: 80px;
@@ -66,7 +69,7 @@ img .backgrounnd {
 }
 
 .nav-logo {
-  color: brown;
+  color: rgb(240, 132, 9);
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
@@ -103,9 +106,6 @@ img .backgrounnd {
 .nav-item-2 {
   height: 80px;
   display: flex;
-}
-h1 {
-  color: black;
 }
 
 .overlay {
@@ -265,8 +265,7 @@ li {
 .card {
   width: 100%;
   top: 8%;
-  background-color: green;
-
+  height: 100%;
   aspect-ratio: 1/0.7;
   border-radius: 8px;
   position: sticky;
@@ -503,10 +502,9 @@ li {
   margin-top: 40px;
 }
 .Art-cards-item {
-  background-color: transparent;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 40px;
 }
 .Art-div {
   background-color: transparent;
@@ -540,27 +538,26 @@ li {
   color: black;
 }
 .Art-button {
-  width: 100px;
+  width: 80px;
   height: 30px;
-  border: transparent;
-  background: transparent;
-  backdrop-filter: blur(18px);
-  padding: 10px;
-  border: 1px dashed black;
   color: white;
+  background-color: rgb(240, 132, 9);
+  border: 1px solid;
+  border-radius: 5px;
 }
 .Art-button:hover {
   width: 100px;
   height: 40px;
   border: 1px solid black;
-  background: rgb(37, 35, 35);
+  background: white;
   backdrop-filter: blur(18px);
   padding: 10px;
   cursor: pointer;
+  color: rgb(240, 132, 9);
 }
 .Art-cards-item-text-a {
   font-size: 1rem;
-  color: rgb(240, 132, 9);
+
   padding-bottom: 20px;
   text-decoration: none;
 }
@@ -797,7 +794,7 @@ li {
   width: 100%;
   background-color: transparent;
   top: 8%;
-  height: 100%;
+  height: 90%;
   aspect-ratio: 1/0.7;
   border-radius: 8px;
   position: absolute;
@@ -853,15 +850,15 @@ li {
 
 .footer {
   width: 100%;
-  color: black;
+  color: white;
   background: rgb(240, 132, 9);
   backdrop-filter: blur(8px);
   position: sticky;
   border: transparent;
-  border-top-left-radius: 125px;
+
   bottom: 0;
   font-size: 17px;
-  margin-top: auto;
+
   padding: 10px 30px;
 }
 .footer:hover {
@@ -907,18 +904,17 @@ li {
 .media-links {
   font-size: 25x;
   color: black;
+
+  width: fit-content;
 }
-.media-links:hover {
-  font-size: 18px;
-  color: white;
-}
+
 form {
   padding-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 20px;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+
   margin-bottom: 50px;
 }
 form .envelope {
@@ -998,19 +994,11 @@ form .form-btn {
   border-radius: 250px;
   perspective: 500px;
 }
-.Staycation-card-texting-p:hover {
-  background: transparent;
-  backdrop-filter: blur(8px);
-  color: rgb(240, 132, 9);
-}
-.Staycation-card-texting-p {
-  color: black;
-}
+
 .flip-box {
-  background-color: transparent;
   width: 350px;
   height: 300px;
-  border: none;
+  text-decoration: none;
   perspective: 1000px;
 }
 
@@ -1021,17 +1009,16 @@ form .form-btn {
   text-align: center;
   transition: transform 7s;
   transform-style: preserve-3d;
-  color: bla;
 }
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
-
-  /* backdrop-filter: blur(8px); */
 }
 .Staycation-cards-item {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  background-color: blue;
+
   position: relative;
   margin: 1 1rem;
   margin-bottom: 11rem;
@@ -1056,24 +1043,31 @@ form .form-btn {
   background-color: transparent;
   object-fit: cover;
 }
+.Staycation-card-texting-p {
+  color: black;
+}
+.Staycation-card-texting-h1 {
+  color: black;
+
+  text-decoration: none;
+}
 .booking-btn {
-  width: 100px;
+  width: 80px;
   height: 30px;
-  border: transparent;
-  background: rgb(240, 132, 9);
-  backdrop-filter: blur(18px);
-  padding: 10px;
-  border: 1px dashed black;
   color: white;
+  background-color: rgb(240, 132, 9);
+  border: 1px solid;
+  border-radius: 5px;
 }
 .booking-btn:hover {
   width: 100px;
   height: 40px;
   border: 1px solid black;
-  background: rgb(143, 91, 32);
+  background: white;
   backdrop-filter: blur(18px);
   padding: 10px;
   cursor: pointer;
+  color: rgb(240, 132, 9);
 }
 .booking-btn-a {
   font-size: 1rem;
@@ -1083,7 +1077,6 @@ form .form-btn {
 }
 
 .AddedThings {
-  background-color: red;
   color: white;
   width: 20px;
   height: 20px;
@@ -1096,29 +1089,29 @@ form .form-btn {
 .stepbox {
   width: 190px;
   height: 40px;
-  background-color: transparent;
-  /* background-image: linear-gradient(to right, black, rgb(143, 91, 32)); */
+  background-color: rgb(251, 227, 184);
   border: 1px solid rgb(143, 91, 32);
   border-radius: 20px;
   text-align: center;
-  color: rgb(100, 98, 98);
+  color: black;
   font-size: 1rem;
   margin-bottom: 10px;
-  /* background-color: black; */
 }
 .Stepboxx {
   padding-top: 10px;
   display: flex;
 
   flex-direction: column;
+
+  border-radius: 5px;
 }
 
 .StepsForm {
-  background-image: linear-gradient(to right, black, rgb(143, 91, 32));
+  background-color: white;
   width: 400px;
   height: 250px;
   padding: 10px;
-  background-image: linear-gradient(to right, white blue);
+  color: orange;
   border: 1px solid rgb(143, 91, 32);
   border-radius: 15px;
 }
@@ -1143,21 +1136,22 @@ form .form-btn {
   height: 35px;
   border: none;
   margin-bottom: 10px;
-  background-color: rgb(127, 81, 27);
+  background-color: rgb(225, 177, 123);
+  border-radius: 5px;
 }
 .StepButton {
   width: 30px;
   height: 30px;
   color: white;
-  background-image: linear-gradient(to left, black, rgb(143, 91, 32));
+  background-color: rgb(180, 132, 44);
   border: 1px solid;
 }
+
 .StepButton:hover {
   width: 70px;
   height: 30px;
-  color: white;
-  background-image: linear-gradient(to top, black, rgb(59, 37, 12));
-
+  color: rgb(180, 132, 44);
+  background-color: white;
   border: 1px solid;
   cursor: pointer;
 }
@@ -1204,73 +1198,5 @@ form .form-btn {
   }
   100% {
     left: 100%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  main {
-    width: 429px;
-    height: 930px;
-  }
-  video {
-    width: 429px;
-    height: 930px;
-    overflow: hidden;
-    object-fit: cover;
-  }
-  .content {
-    width: 429px;
-    height: 930px;
-    font-size: 14px;
-    display: flex;
-    position: relative;
-  }
-  .overlay {
-    width: 429px;
-    height: 930px;
-  }
-  .Home-btn {
-    color: black;
-    width: 100px;
-    height: 40px;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 10px;
-    font-size: 1rem;
-  }
-  .dropdown-menu {
-    width: 30px;
-
-    height: 20px;
-  }
-  .dropdownItem {
-    margin: 0;
-
-    height: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-  }
-  .nav-item {
-    width: 50px;
-    margin: 0;
-    height: 30px;
-  }
-  .nav-links {
-    color: #fff;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    text-decoration: none;
-
-    width: 60px;
-  }
-  .dropdownIcon {
-    color: black;
-    width: 30px;
-    height: 20px;
-    background-color: green;
-  }
-  .D1 {
-    font-size: 20px;
   }
 }
